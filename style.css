@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    color: white;
+}
+html {
+    scroll-behavior: smooth;
+  }
+.body-container {
+    display: grid;
+    overflow: hidden;
+    width: 100%;
+}
+.background {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+    background-position: center;
+}
+.button {
+    cursor: pointer;
+}
+.button:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+/*-- Header --*/
+.header {
+    background-position: center;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+    display: flex;
+    background-color: rgba(255,255,255,0.9);
+    height: 150px;
+    padding: 0 8% 0 8%;
+    justify-content: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    animation: smoothScroll 1s forwards;
+}
+.navbar-group {
+    max-width: 1360px;
+    display: flex;
+    width: 100%;
+}
+.navbar .logo {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    margin-right: 3vw;
+}
+.navbar .logo img {
+    width: 100%;
+}
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2vw;
+}
+.navbar ul li a {
+    display: flex;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+    height: 100%;
+    width: 100%;
+    padding: 0 1vw;
+}
+.navbar ul li a:hover {
+    background: rgba(0, 0, 0, 0.514);
+    color: #f1f2d3;
+}
+/*-- Banner --*/
+.banner {
+    background-image: url(./images/CamTT_Day-Boutique-1.jpg);
+    width: 100vw;
+    height: 100%;
+}
+/*-- Welcome --*/
+.content {
+    background-image: url(./images/bg_newss.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcome {
+    max-width: 1360px;
+    margin-top: 65px;
+    height: 810px;
+}
+.welcome h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    color: #C9000A;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.welcome-card img {
+    width: 65%;
+    position: absolute;
+    top: 12%;
+    right: 1%;
+}
+.welcome-card {
+    position: relative;
+}
+.thanhlong {
+    background-color: #A6010A;
+    width: 70%;
+    height: 491px;
+}
+.thanhlong h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: left;
+    line-height: 1.5;
+}
+.thanhlong p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.2;
+    margin-top: 20px;
+}
+.card-info {
+    padding: 3% 55% 10% 4%;
+}
+.card-info .button {
+    border: 1px solid white;
+    margin-top: 35px;
+    padding: 4% 5% 3% 5%;
+    max-width: 160px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;  
+}
+.card-info .button:hover {
+    color: #A6010A;
+    background-color: white;
+}
+.news {
+    max-width: 1360px;
+    height: 750px;
+}
+.title {
+    width: 1360px;
+}
+.title h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #C9000A;
+    text-align: center;
+}
+.title p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 20px;
+    color: black;
+}
+.news-content p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.2;
+    margin-top: 20px;
+    color: white;
+}
+.news-content {
+    display: flex;
+    gap: 3vw;
+    margin-top: 15px;
+}
+.news-img {
+    background-image: linear-gradient(90deg, rgba(3, 3, 3, 0.5) 9.84%, rgba(40, 40, 40, 0.15) 67.9%, rgba(196, 196, 196, 0) 99.03%),url(./images/TONG-THE-TLB_VIEW-BIEN.jpg);
+    width: 70%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0% 0% 3% 4%;
+}
+.datcoc {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 600px;
+    background: linear-gradient( #3f87a6, #352bf6);
+}
+.datcoc img {
+    width: 45%;
+}
+.avatar {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border: 3px solid #b8903e;
+    border-radius: 100%;
+    padding: 0 5% 0 5%;
+    width: 200px;
+    height: 200px;
+}
+.avatar img {
+    margin-top: 5px;
+    width: 100%;
+    height: 95%;
+}
+.seat h1 {
+    font-family: "Yellowtail", cursive;
+    font-weight: 300;
+    color: #263760;
+    text-align: center;
+}
+.seat p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-align: center;
+    color: #263760;
+    line-height: 0;
+    position: relative;
+    top: -5px;
+}
+.seat-info {
+    margin-top: 10px;
+}
+.detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b8903e;
+    border: 1px solid black;
+    filter: brightness(125%);
+    margin-top: 8px;
+    align-content: center;
+    padding: 3% 3% 1% 3%;
+    width: 270px;
+    border-radius: 5px;
+}
+.detail p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    color: black;
+}
+.news-img h5 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    background: url(../images/bg_footer.png);
+    background-color: #981B1E;
+    color: white;
+    padding: 60px 0 0px 0;
+    background-size: 100% 100%;
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    max-width: 1360px;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-detail h1  {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+.contact-detail h4 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white;
+}
+.contact-detail p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: white;
+}
+.social {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: white;
+}
